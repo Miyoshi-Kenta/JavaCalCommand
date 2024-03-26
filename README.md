@@ -3,18 +3,9 @@
 
 ## 実行方法
 プログラムを実行するにはシステムにJavaがインストールされていることを確認してください。
+以下のコマンドでアプリケーションを実行します。
 
-まず、コマンドプロンプトで適切な文字コードを設定します。
-
->chcp 65001
-
-次に、以下のコマンドでJavaファイルをコンパイルします。
-
->javac -encoding UTF-8 JavaCalCommand.java
-
-コンパイルが完了したら、以下のコマンドでアプリケーションを実行します。
-
->java JavaCalCommand
+>java -Dfile.encoding=UTF-8 -cp . JavaCalCommand.java
 
 特定の年のカレンダーを表示するには、cal <年>（例：cal 2024）と入力してください。
 
